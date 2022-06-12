@@ -1,13 +1,17 @@
 {
   "name": "liff-test",
   "version": "0.0.0",
+  "homepage": "https://github.com/huimin9/liff-test/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@line/liff": "2.20.1"
+    "@line/liff": "2.20.1",
+    "gh-pages": "^4.0.0"
   },
   "devDependencies": {
     "vite": "^2.7.2"
